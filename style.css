@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ### Primary */
+
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+--paragraphs: hsla(0, 0%, 100%, 0.75);
+--bhb: hsl(0, 0%, 95%);
+}
+
+body,
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.container{
+    padding: 1.5rem;
+}
+
+p{
+    line-height: 1.6rem;
+    /* padding: 0px 10px 0px 10px; */
+}
+
+.card{
+    padding: 2.5rem;
+    
+}
+
+.card img{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+}
+
+.or{
+    background-color: var(--bright-orange);
+     color:var(--paragraphs);  
+     border-top-left-radius: 0.7rem;
+     border-top-right-radius: 0.7rem;
+}
+
+.or .btn{
+    color: var(--bright-orange);
+}
+
+.bl{
+    background-color: var(--dark-cyan);
+    color:var(--paragraphs);
+}
+
+.bl .btn{
+    color: var(--dark-cyan);
+}
+
+.gr{
+    background-color: var(--very-dark-cyan);
+    color:var(--paragraphs);    
+    border-bottom-left-radius: 0.7rem;
+     border-bottom-right-radius: 0.7rem;
+}
+
+.gr .btn{
+    color: var(--very-dark-cyan);
+}
+
+.btn{
+    /* color: transparent; */
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--bhb);
+    padding: 15px 30px 15px 30px;
+    border: 2px solid var(--bhb);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    /* color: rgba(247, 240, 240, -50); */
+     
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--bhb);
+}
+
+
+/* .card{
+    display: flex;
+} */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 990px){
+    .container{
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        /* margin: 0rem 16rem 0rem 16rem; */
+        max-width: 900px;
+
+    }
+
+    .gr{
+        border-radius: 0rem 0.7rem 0.7rem 0rem;
+    }
+    
+    .or{
+        border-radius: 0.7rem 0rem 0rem 0.7rem;
+        
+    }
+
+    
+}
